@@ -1,0 +1,15 @@
+[package]
+name = "mapstic-derive"
+version = "0.1.0"
+edition = "2021"
+description = "Derive macro exported by the mapstic crate"
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/LawnGnome/mapstic"
+rust-version = "1.65.0"
+
+[dependencies]
+mapstic-derive-impl = { version = "0.1.0", path = "../derive-impl" }
+proc-macro-error = "1.0.4"
+
+[lib]
+proc-macro = true

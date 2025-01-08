@@ -1,0 +1,7 @@
+---
+source: tests/generics.rs
+expression: "WhereBound::<u32>::to_mapping()"
+---
+properties:
+  inner:
+    type: unsigned_long

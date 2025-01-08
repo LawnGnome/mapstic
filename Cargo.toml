@@ -1,0 +1,40 @@
+[package]
+name = "mapstic"
+version = "0.1.0"
+edition = "2021"
+description = "Tooling to generate Elasticsearch index mappings from type definitions"
+keywords = ["elastic", "elasticsearch", "mapping"]
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/LawnGnome/mapstic"
+rust-version = "1.65.0"
+
+[dependencies]
+mapstic-core = { version = "0.1.0", path = "core" }
+mapstic-derive = { version = "0.1.0", path = "derive" }
+
+[features]
+chrono = ["mapstic-core/chrono"]
+nightly = ["mapstic-core/nightly"]
+rc = ["mapstic-core/rc"]
+
+[workspace]
+resolver = "2"
+members = ["core", "derive", "derive-impl"]
+
+[workspace.dependencies]
+indexmap = { version = "2.7.1", features = ["serde"] }
+serde = "1.0.217"
+thiserror = "2.0.11"
+
+[dev-dependencies]
+anyhow = "1.0.95"
+chrono = "0.4.39"
+insta = { version = "1.42.0", features = ["yaml"] }
+mapstic-derive-impl = { version = "0.1.0", path = "derive-impl" }
+proc-macro2 = "1.0.93"
+serde_json = "1.0.135"
+
+[[example]]
+name = "basic"
+path = "examples/basic.rs"
+required-features = ["chrono"]

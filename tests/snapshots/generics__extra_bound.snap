@@ -1,0 +1,7 @@
+---
+source: tests/generics.rs
+expression: "ExtraBound::<bool>::to_mapping()"
+---
+properties:
+  inner:
+    type: boolean

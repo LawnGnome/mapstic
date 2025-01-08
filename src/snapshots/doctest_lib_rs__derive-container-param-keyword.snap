@@ -1,0 +1,10 @@
+---
+source: src/lib.rs
+expression: "Keyword::to_mapping()"
+---
+type: text
+fields:
+  completion:
+    type: completion
+  keyword:
+    type: keyword

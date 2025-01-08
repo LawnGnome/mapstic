@@ -1,0 +1,9 @@
+---
+source: tests/tuple.rs
+expression: "Tuple::to_mapping()"
+---
+properties:
+  tuple:
+    on_container: true
+    on_struct: true
+    type: keyword

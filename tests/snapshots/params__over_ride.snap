@@ -1,0 +1,13 @@
+---
+source: tests/params.rs
+expression: "Override::to_mapping()"
+---
+on_container: true
+properties:
+  field:
+    on_container: false
+    on_field: true
+    on_sub_container: true
+    properties:
+      value:
+        type: integer

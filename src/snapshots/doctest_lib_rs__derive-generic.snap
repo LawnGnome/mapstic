@@ -1,0 +1,13 @@
+---
+source: src/lib.rs
+expression: "Wrapper::<InnerVariant>::to_mapping()"
+---
+properties:
+  id:
+    type: integer
+  inner:
+    type: text
+    fields:
+      keyword:
+        ignore_above: 256
+        type: keyword

@@ -1,0 +1,26 @@
+[package]
+name = "mapstic-derive-impl"
+version = "0.1.0"
+edition = "2021"
+description = "Implementation of the derive macro provided by the mapstic crate"
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/LawnGnome/mapstic"
+rust-version = "1.65.0"
+
+[dependencies]
+darling = "0.20.10"
+indexmap.workspace = true
+itertools = "0.14.0"
+mapstic-core = { version = "0.1.0", path = "../core", features = [
+  "proc-macro",
+] }
+proc-macro2 = "1.0.93"
+quote = "1.0.38"
+serde.workspace = true
+syn = "2.0.96"
+thiserror.workspace = true
+
+[dev-dependencies]
+claims = "0.8.0"
+insta = { version = "1.42.0", features = ["yaml"] }
+serde_json = "1.0.137"

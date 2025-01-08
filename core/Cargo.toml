@@ -1,0 +1,18 @@
+[package]
+name = "mapstic-core"
+version = "0.1.0"
+edition = "2021"
+description = "Internal functionality used by the mapstic crate at runtime"
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/LawnGnome/mapstic"
+rust-version = "1.65.0"
+
+[dependencies]
+chrono = { version = "0.4.39", optional = true }
+indexmap.workspace = true
+serde = { workspace = true, features = ["derive"] }
+
+[features]
+nightly = []
+proc-macro = []
+rc = []

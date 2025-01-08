@@ -1,0 +1,7 @@
+---
+source: tests/generics.rs
+expression: "ExtraTypes::<Vec<u8>, String>::to_mapping()"
+---
+properties:
+  inner:
+    type: unsigned_long

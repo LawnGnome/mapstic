@@ -1,0 +1,7 @@
+---
+source: tests/generics.rs
+expression: "TypeBound::<i32>::to_mapping()"
+---
+properties:
+  inner:
+    type: integer

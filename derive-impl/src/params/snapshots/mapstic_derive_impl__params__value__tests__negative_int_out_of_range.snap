@@ -1,0 +1,16 @@
+---
+source: derive-impl/src/params/value.rs
+expression: error
+---
+Error {
+    kind: Custom(
+        "number too small to fit in target type",
+    ),
+    locations: [
+        "params",
+        "large_int",
+    ],
+    span: Some(
+        Span,
+    ),
+}

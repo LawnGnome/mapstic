@@ -1,0 +1,19 @@
+---
+source: tests/params.rs
+expression: "Params::to_mapping()"
+---
+actually_true: true
+char: c
+falsey: false
+float: 42.1
+int: -42
+nested:
+  also_true: true
+  str: str
+  sub:
+    subsub:
+      wub: wub wub wub
+str: str
+truthy: true
+type: text
+uint: 9223372036854775808

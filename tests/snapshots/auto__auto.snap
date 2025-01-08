@@ -1,0 +1,121 @@
+---
+source: tests/auto.rs
+expression: "Auto::to_mapping()"
+---
+properties:
+  atomic_i16:
+    type: short
+  atomic_i32:
+    type: integer
+  atomic_i64:
+    type: long
+  atomic_i8:
+    type: byte
+  atomic_u16:
+    type: unsigned_long
+  atomic_u32:
+    type: unsigned_long
+  atomic_u64:
+    type: unsigned_long
+  atomic_u8:
+    type: unsigned_long
+  binary:
+    type: binary
+  boolean:
+    type: boolean
+  box_:
+    type: integer
+  btree_set:
+    type: integer
+  cell:
+    type: integer
+  cow:
+    type: integer
+  cow_str:
+    fields:
+      keyword:
+        ignore_above: 256
+        type: keyword
+    type: text
+  cstr:
+    type: binary
+  cstring:
+    type: binary
+  date:
+    type: date
+  double:
+    type: double
+  float:
+    type: float
+  hash_set:
+    type: integer
+  ip:
+    type: ip
+  ipv4:
+    type: ip
+  ipv6:
+    type: ip
+  list:
+    type: integer
+  mutex:
+    type: integer
+  nested:
+    properties:
+      value:
+        type: integer
+  non_zero_i16:
+    type: short
+  non_zero_i32:
+    type: integer
+  non_zero_i64:
+    type: long
+  non_zero_i8:
+    type: byte
+  non_zero_u16:
+    type: unsigned_long
+  non_zero_u32:
+    type: unsigned_long
+  non_zero_u64:
+    type: unsigned_long
+  non_zero_u8:
+    type: unsigned_long
+  normal_i16:
+    type: short
+  normal_i32:
+    type: integer
+  normal_i64:
+    type: long
+  normal_i8:
+    type: byte
+  normal_u16:
+    type: unsigned_long
+  normal_u32:
+    type: unsigned_long
+  normal_u64:
+    type: unsigned_long
+  normal_u8:
+    type: unsigned_long
+  option:
+    type: integer
+  ref_cell:
+    type: integer
+  reverse:
+    type: ip
+  rw_lock:
+    type: integer
+  str:
+    fields:
+      keyword:
+        ignore_above: 256
+        type: keyword
+    type: text
+  string:
+    fields:
+      keyword:
+        ignore_above: 256
+        type: keyword
+    type: text
+  vec:
+    type: integer
+  vec_deque:
+    type: integer

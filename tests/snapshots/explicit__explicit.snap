@@ -1,0 +1,18 @@
+---
+source: tests/explicit.rs
+expression: "Explicit::to_mapping()"
+---
+properties:
+  completion:
+    analyzer: simple
+    preserve_separators: false
+    type: completion
+  completion_as_text:
+    analyzer: simple
+    type: text
+  keyword:
+    type: keyword
+  match_only_text:
+    type: match_only_text
+  text:
+    type: text

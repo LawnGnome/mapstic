@@ -1,0 +1,5 @@
+---
+source: src/lib.rs
+expression: "Keyword::to_mapping()"
+---
+type: keyword
